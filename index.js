@@ -1,0 +1,7 @@
+const axios = require('axios');
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ4MDY1MDQwLCJpYXQiOjE3NDgwNjQ3NDAsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjhjMjc3OGNmLWFkNWQtNDNkZC1iM2QwLWFhZmI2ZmI4ODJmNyIsInN1YiI6ImFuamFuYXRoYW5nYXZlbDA1QGdtYWlsLmNvbSJ9LCJlbWFpbCI6ImFuamFuYXRoYW5nYXZlbDA1QGdtYWlsLmNvbSIsIm5hbWUiOiJhbmphbmFkZXZpIHQiLCJyb2xsTm8iOiI5Mjc2MjJiY3MwMDYiLCJhY2Nlc3NDb2RlIjoid2hlUVV5IiwiY2xpZW50SUQiOiI4YzI3NzhjZi1hZDVkLTQzZGQtYjNkMC1hYWZiNmZiODgyZjciLCJjbGllbnRTZWNyZXQiOiJia0hTY0FXU2NlUm5qQ3lHIn0.rmJGy72gVs2xU2ac5jbkOLKEnnTzPUH-kMqQDwhKeRw";
+axios.get('http://20.244.56.144/evaluation-service/stocks', {
+  headers: {
+    Authorization: `Bearer ${token}`
+  }
+});
